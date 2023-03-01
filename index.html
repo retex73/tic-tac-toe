@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+
+    <!-- Create Board -->
+    <div class="board" id="board">
+        <div class="row">
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+        </div>
+    </div>
+
+    <!-- Create Reset Button -->
+    <div class="reset">
+        <button id="reset" onclick="resetGame()">Reset</button>
+    </div>
+    <!-- Display the winner -->
+    <div class="winner" id="winner"></div>
+    <footer>
+        <p>Created by <a href="#">Peter Williams</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

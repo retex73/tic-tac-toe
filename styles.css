@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* root styling */
+:root {
+    /* colors */
+    --light-green: #71d66c;
+    --dark-green: #1fe414;
+    --grey: #333333;
+    --wood-light: #898989;
+    --wood-dark: #0a0a0a;
+    --light-grey: #f2f2f2;
+
+    /* fonts */
+    --font-family: 'Inter', sans-serif;
+    --font-weight: 900;
+    --font-size: 25px;
+    --font-color: var(--grey);
+
+    /* header and footer */
+    --header-bg: linear-gradient(to bottom, var(--light-green), var(--dark-green));
+    --footer-bg: linear-gradient(to bottom, var(--dark-green), var(--light-green));
+
+}
+
+/* body styling with grey gradient radiating from the middle filling the page */
+body {
+    font-family: var(--font-family);
+    background: radial-gradient(circle at 50% 0%, var(--wood-light), var(--wood-dark));
+    height: 100vh;
+}
+
+/* header styling with linear gradient going vertically */
+header {
+    /* background: linear-gradient(to bottom, var(--light-green), var(--dark-green)); */
+    background: var(--header-bg);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    border-bottom: 1px solid var(--grey);
+
+}
+
+/* footer styling sticks to the bottom and black border on the top*/
+footer {
+    background: var(--footer-bg);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid var(--grey);
+}
+
+/* winner & button styling */
+.winner,
+button {
+    background-color: var(--light-green);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+    margin: 10px;
+}
+
+/* board styling */
+.board {
+
+    margin: auto;
+    margin-top: 200px;
+    background: radial-gradient(circle at 50% 0%, var(--wood-dark), var(--wood-light));
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    width: 330px;
+    height: 335px;
+    font-family: var(--font-family);
+}
+
+.row {
+    clear: both;
+}
+
+/* cell styling */
+.cell {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+    float: left;
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    font-weight: var(--font-weight);
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* cell styling when mouse is over */
+.cell:hover {
+    background-color: var(--light-grey);
+}
+
+/* cell styling when cell is clicked */
+.cell.clicked {
+    background-color: #000000;
+}
+
+/* cell styling when cell is clicked and mouse is over */
+.cell.clicked:hover {
+    background-color: #000000;
+}
+
+/* cell styling when cell is clicked and mouse is over */
+.cell.clicked:hover {
+    background-color: #000000;
+}
